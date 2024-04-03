@@ -8,16 +8,20 @@ namespace AC1
         public static void Main()
         {
             const int MAX = 10;
+            const string MsgPlayer = "Introduce el nombre (solo letras): ";
+            const string MsgMission = "Introduce la misión (nom adaptat de les lletres en grec, seguit d’un guió i un número de 3 xifres) : ";
+            const string MsgScore = "Introduce la puntuación [0-500]: ";
+
 
             List<Score> scores = new List<Score>();
 
             for (int i = 0; i < MAX; i++)
             {
-                Console.WriteLine("Introduce el nombre: ");
+                Console.WriteLine(MsgPlayer);
                 string? player = Console.ReadLine();
-                Console.WriteLine("Introduce la misión: ");
+                Console.WriteLine(MsgMission);
                 string? mission = Console.ReadLine();
-                Console.WriteLine("Introduce la puntuación: ");
+                Console.WriteLine(MsgScore);
                 int score = Convert.ToInt32(Console.ReadLine());
                 Score s = new Score(player, mission, score);
                 scores.Add(s);

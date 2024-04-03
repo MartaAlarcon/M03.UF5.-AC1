@@ -14,9 +14,9 @@ namespace AC1
             for (int i = 0; i < MAX; i++)
             {
                 Console.WriteLine("Introduce el nombre: ");
-                string player = Console.ReadLine();
+                string? player = Console.ReadLine();
                 Console.WriteLine("Introduce la misión: ");
-                string mission = Console.ReadLine();
+                string? mission = Console.ReadLine();
                 Console.WriteLine("Introduce la puntuación: ");
                 int score = Convert.ToInt32(Console.ReadLine());
                 Score s = new Score(player, mission, score);

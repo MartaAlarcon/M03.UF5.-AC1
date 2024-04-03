@@ -10,8 +10,8 @@ namespace M03.UF5._AC1
 {
     public class Score : IComparable<Score>
     {
-        private string player;
-        private string mission;
+        private string? player;
+        private string? mission;
         private int scoring;
 
         public Score(string player, string mission, int scoring)
@@ -21,7 +21,7 @@ namespace M03.UF5._AC1
             this.Scoring = scoring;
         }
 
-        public string Player
+        public string? Player
         {
             get { return player; }
             set
@@ -38,7 +38,7 @@ namespace M03.UF5._AC1
             }
         }
 
-        public string Mission
+        public string? Mission
         {
             get { return mission; }
             set
